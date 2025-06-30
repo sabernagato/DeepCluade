@@ -1,0 +1,40 @@
+# DeepCluade .gitignore
+
+# Agent工作区
+agents/*/architect/workspace/
+agents/*/developer/workspace/
+agents/*/tester/workspace/
+agents/*/reviewer/workspace/
+
+# Agent生成的文件
+agents/*/architect/designs/*
+agents/*/tester/test-plans/*
+agents/*/tester/test-results/*
+agents/*/reviewer/reviews/*
+
+# 工作流运行时文件
+.agents/_workflow/tasks/*
+.agents/_workflow/reviews/*
+.agents/_workflow/reports/*
+.agents/_communication/*/*
+.agents/_permissions/pending/*
+.agents/_status/*
+
+# 保留示例文件
+!.agents/_workflow/tasks/TASK-EXAMPLE.json
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志
+*.log
+
+# 临时文件
+*.tmp
+*.temp
