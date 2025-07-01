@@ -74,6 +74,21 @@
 - `/permission-status` - 查看权限状态
 - `/review` - 查看审核结果
 
+### 命令执行说明
+
+当执行 `/init-frontend` 或 `/init-backend` 命令时，你应该：
+
+1. 检查是否存在 `create-agent-configs.sh` 脚本
+2. 如果存在，执行该脚本来创建Agent配置文件：
+   ```bash
+   # 先确保脚本有执行权限
+   chmod +x create-agent-configs.sh
+   # 执行脚本创建配置
+   ./create-agent-configs.sh
+   ```
+3. 脚本会自动创建中文版的Agent配置文件
+4. 确认配置文件创建成功后，提示用户团队初始化完成
+
 ## 文件操作权限
 
 ### 可读取
